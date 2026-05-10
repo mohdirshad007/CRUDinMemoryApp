@@ -7,9 +7,12 @@ public class EmployeeController : ControllerBase
 {
     private readonly EmployeeRepository _repo;
 
-    public EmployeeController()
+    // This is ticket1 commit1
+    // This is ticket1 commit2
+    // This is ticket1 commit3
+    public EmployeeController(EmployeeRepository repo)
     {
-        _repo = new EmployeeRepository();
+        _repo = repo;
     }
 
     // GET /Employee

@@ -7,9 +7,9 @@ public class EmployeeController : ControllerBase
 {
     private readonly EmployeeRepository _repo;
 
-    public EmployeeController()
+    public EmployeeController(EmployeeRepository repo)
     {
-        _repo = new EmployeeRepository();
+        _repo = repo;
     }
 
     // GET /Employee
